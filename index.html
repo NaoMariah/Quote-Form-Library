@@ -8,12 +8,15 @@
 <body>
 
 <form action="" id="quote-form">
-  <input type="range" min="0" max="10"> <p class="slider-output">1</p>
-  <input type="range" min="0" max="10"> <p class="slider-output">2</p>
-  <input type="range" min="0" max="10"> <p class="slider-output">3</p>
-  <input type="range" min="0" max="10">
+  <input class="quote-slider" type="range" min="0" max="3" value="10"> <p class="slider-output">1</p>
+  <input class="quote-slider" type="range" min="0" max="3"> <p class="slider-output">2</p>
+  <input class="quote-slider" type="range" min="0" max="10"> <p class="slider-output">3</p>
+  <input type="range" min="0" max="10"> <p>doesn't contain quote-slider or slider-output class</p>
+  <input class="quote-slider" type="range" min="0" max="10"> <p class="slider-output">4</p>
   <input type="radio"> <p class="radio-output"></p>
   <input type="checkbox">
+
+  <p id="quote-total"> Total </p>
 </form>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
